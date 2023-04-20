@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="80dp"
+        android:layout_toStartOf="@+id/editNombre"
+        android:text="Nombre:" />
+
+    <EditText
+        android:id="@+id/editNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="42dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/txtApelli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNom"
+        android:layout_alignStart="@+id/txtNom"
+        android:layout_alignEnd="@+id/txtNom"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="0dp"
+        android:text="Apellido" />
+
+    <EditText
+        android:id="@+id/editApell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editNombre"
+        android:layout_alignStart="@+id/editNombre"
+        android:layout_alignEnd="@+id/editNombre"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/txtTelef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtApelli"
+        android:layout_alignStart="@+id/txtApelli"
+        android:layout_alignEnd="@+id/txtApelli"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="-2dp"
+        android:text="Telefono" />
+
+    <EditText
+        android:id="@+id/editTelef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editApell"
+        android:layout_alignStart="@+id/editApell"
+        android:layout_alignEnd="@+id/editApell"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="-1dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTelef"
+        android:layout_alignStart="@+id/txtTelef"
+        android:layout_alignEnd="@+id/txtTelef"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="2dp"
+        android:text="Email" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btnNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_navegador"/>
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTelef"
+        android:layout_alignStart="@+id/editTelef"
+        android:layout_alignEnd="@+id/editTelef"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="0dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+
+</RelativeLayout>
