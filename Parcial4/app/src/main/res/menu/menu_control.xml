@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/cliente"
+        android:icon="@drawable/cliente"
+        android:title="Cliente"
+        app:showAsAction="ifRoom"></item>
+    <item
+        android:id="@+id/Vehiculo"
+        android:icon="@drawable/vehiculo"
+        android:title="Vehiculo"
+        app:showAsAction="ifRoom"></item>
+    <item
+        android:id="@+id/CliVehi"
+        android:icon="@drawable/clientevehiculo"
+        android:title="ClienteVehiculo"
+        app:showAsAction="ifRoom">
+
+    </item>
+
+</menu>
